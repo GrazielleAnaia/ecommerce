@@ -8,6 +8,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.math.BigDecimal;
+
 @SpringBootApplication
 public class EcommerceApplication {
 
@@ -18,8 +20,8 @@ public class EcommerceApplication {
     @Bean
     CommandLineRunner startData(ProductRepository repository) {
         return args -> {
-            repository.save(new Product("mouse", 29.99, 150));
-            repository.save(new Product("keyboard", 89.99, 75));
+            repository.save(new Product("mouse", new BigDecimal(29.99), 150));
+            repository.save(new Product("keyboard", new BigDecimal(89.99), 75));
             IO.println("Product in DB: " + repository.findAll().size());
 
         };
