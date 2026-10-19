@@ -2,7 +2,7 @@
 
 ![Thumbnail do vídeo](docs/thumbnail.png)
 
-> 🎥 **Assista ao vídeo:** [LINK DO VÍDEO NO YOUTUBE]
+> 🎥 **Assista ao vídeo:** [https://youtu.be/Qw4dSTIG9oY]
 
 Projeto de exemplo com **Spring Boot + Spring Data JPA** mostrando como implementar `equals()` e `hashCode()` em uma entidade JPA de forma segura para produção, usando um **business key (UUID)** e `Hibernate.getClass()`.
 
